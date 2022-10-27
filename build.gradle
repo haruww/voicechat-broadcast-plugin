@@ -22,7 +22,7 @@ dependencies {
     // See https://www.spigotmc.org/wiki/buildtools/
     // implementation "org.bukkit:craftbukkit:${bukkit_version}"
     // Use this dependency if you don't want to compile bukkit
-    implementation "io.papermc.paper:paper-api:${bukkit_version}"
+    implementation "com.destroystokyo.paper:paper-api:${bukkit_version}"
     implementation "de.maxhenkel.voicechat:voicechat-api:${voicechat_api_version}"
 }
 

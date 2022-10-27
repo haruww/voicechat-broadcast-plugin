@@ -1,16 +1,16 @@
 package de.maxhenkel.voicechat_broadcast;
 
 import de.maxhenkel.voicechat.api.BukkitVoicechatService;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.annotation.Nullable;
+import java.util.logging.Logger;
 
 public final class VoicechatBroadcast extends JavaPlugin {
 
     public static final String PLUGIN_ID = "voicechat_broadcast";
-    public static final Logger LOGGER = LogManager.getLogger(PLUGIN_ID);
+    public static final Logger LOGGER = Bukkit.getLogger();
 
     @Nullable
     private BroadcastVoicechatPlugin voicechatPlugin;

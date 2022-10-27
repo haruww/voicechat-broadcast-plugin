@@ -15,4 +15,4 @@ This project is mostly used as an example for the [Simple Voice Chat Plugin API]
 
 ## Compatibility
 
-This plugin should work with every Minecraft version that works with Simple Voice Chat 1.18.2-2.1.12 or later.
+This plugin should work with every Minecraft version that works with Simple Voice Chat 1.16.5-2.2.22 or later.

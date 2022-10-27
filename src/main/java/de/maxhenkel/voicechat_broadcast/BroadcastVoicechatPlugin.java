@@ -55,9 +55,11 @@ public class BroadcastVoicechatPlugin implements VoicechatPlugin {
         }
         // Cast the generic player object of the voice chat API to an actual bukkit player
         // This object should always be a bukkit player object on bukkit based servers
-        if (!(event.getSenderConnection().getPlayer().getPlayer() instanceof Player player)) {
+        if (!(event.getSenderConnection().getPlayer().getPlayer() instanceof Player)) {
             return;
         }
+
+        Player player = (Player) event.getSenderConnection().getPlayer().getPlayer();
 
         // Check if the player has the broadcast permission
         if (!player.hasPermission(BROADCAST_PERMISSION)) {
@@ -72,7 +74,7 @@ public class BroadcastVoicechatPlugin implements VoicechatPlugin {
         }
 
         // Only broadcast the voice when the group name is "broadcast"
-        if (!group.getName().strip().equalsIgnoreCase("broadcast")) {
+        if (!group.getName().equalsIgnoreCase("broadcast")) {
             return;
         }
 
