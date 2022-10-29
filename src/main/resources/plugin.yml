@@ -9,4 +9,3 @@ website: https://modrepo.de
 permissions:
   voicechat_broadcast.broadcast:
     description: Allows to broadcast your voice
-depend: [ voicechat ]
